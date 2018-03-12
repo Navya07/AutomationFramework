@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[testInvalidLogin is PASSED]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="81760" started-at="2018-03-12T06:54:44Z" finished-at="2018-03-12T06:56:05Z">
+    <groups>
+      <group name="login">
+        <method signature="InvalidLogin.testInvalidLogin()[pri:2, instance:script.InvalidLogin@1622fdf]" name="testInvalidLogin" class="script.InvalidLogin"/>
+      </group> <!-- login -->
+    </groups>
+    <test name="Default test" duration-ms="81760" started-at="2018-03-12T06:54:44Z" finished-at="2018-03-12T06:56:05Z">
+      <class name="script.InvalidLogin">
+        <test-method status="PASS" signature="openApplication()[pri:0, instance:script.InvalidLogin@1622fdf]" name="openApplication" is-config="true" duration-ms="64382" started-at="2018-03-12T06:54:44Z" finished-at="2018-03-12T06:55:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method status="PASS" signature="testInvalidLogin()[pri:2, instance:script.InvalidLogin@1622fdf]" name="testInvalidLogin" duration-ms="15613" started-at="2018-03-12T06:55:48Z" finished-at="2018-03-12T06:56:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.InvalidLogin@1622fdf]" name="closeApplication" is-config="true" duration-ms="1604" started-at="2018-03-12T06:56:04Z" finished-at="2018-03-12T06:56:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testInvalidLogin status=SUCCESS method=InvalidLogin.testInvalidLogin()[pri:2, instance:script.InvalidLogin@1622fdf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[testInvalidLogin is PASSED]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- script.InvalidLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
