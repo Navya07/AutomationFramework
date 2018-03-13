@@ -3,6 +3,7 @@ package script;
 import org.testng.annotations.Test;
 import generic.BaseTest;
 import generic.Excel;
+
 import page.EnterPage;
 import page.LoginPage;
 
@@ -25,11 +26,3 @@ public class ValidLogin extends BaseTest{
 		e.verifyHomePageIsDisplayed(driver, eTitle);
 	}
 }
-
-
-
-
-
-
-
-

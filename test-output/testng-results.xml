@@ -2,40 +2,49 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[testInvalidLogin is PASSED]]>
+      <![CDATA[HomePage is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[testValidLogin is PASSED]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="81760" started-at="2018-03-12T06:54:44Z" finished-at="2018-03-12T06:56:05Z">
+  <suite name="Default suite" duration-ms="85592" started-at="2018-03-13T10:00:27Z" finished-at="2018-03-13T10:01:53Z">
     <groups>
+      <group name="smoke">
+        <method signature="ValidLogin.testValidLogin()[pri:1, instance:script.ValidLogin@1622fdf]" name="testValidLogin" class="script.ValidLogin"/>
+      </group> <!-- smoke -->
       <group name="login">
-        <method signature="InvalidLogin.testInvalidLogin()[pri:2, instance:script.InvalidLogin@1622fdf]" name="testInvalidLogin" class="script.InvalidLogin"/>
+        <method signature="ValidLogin.testValidLogin()[pri:1, instance:script.ValidLogin@1622fdf]" name="testValidLogin" class="script.ValidLogin"/>
       </group> <!-- login -->
     </groups>
-    <test name="Default test" duration-ms="81760" started-at="2018-03-12T06:54:44Z" finished-at="2018-03-12T06:56:05Z">
-      <class name="script.InvalidLogin">
-        <test-method status="PASS" signature="openApplication()[pri:0, instance:script.InvalidLogin@1622fdf]" name="openApplication" is-config="true" duration-ms="64382" started-at="2018-03-12T06:54:44Z" finished-at="2018-03-12T06:55:48Z">
+    <test name="Default test" duration-ms="85592" started-at="2018-03-13T10:00:27Z" finished-at="2018-03-13T10:01:53Z">
+      <class name="script.ValidLogin">
+        <test-method status="PASS" signature="openApplication()[pri:0, instance:script.ValidLogin@1622fdf]" name="openApplication" is-config="true" duration-ms="62786" started-at="2018-03-13T10:00:28Z" finished-at="2018-03-13T10:01:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="testInvalidLogin()[pri:2, instance:script.InvalidLogin@1622fdf]" name="testInvalidLogin" duration-ms="15613" started-at="2018-03-12T06:55:48Z" finished-at="2018-03-12T06:56:04Z">
+        <test-method status="PASS" signature="testValidLogin()[pri:1, instance:script.ValidLogin@1622fdf]" name="testValidLogin" duration-ms="21063" started-at="2018-03-13T10:01:30Z" finished-at="2018-03-13T10:01:51Z">
           <reporter-output>
+            <line>
+              <![CDATA[HomePage is Displayed]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- testInvalidLogin -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.InvalidLogin@1622fdf]" name="closeApplication" is-config="true" duration-ms="1604" started-at="2018-03-12T06:56:04Z" finished-at="2018-03-12T06:56:05Z">
+        </test-method> <!-- testValidLogin -->
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.ValidLogin@1622fdf]" name="closeApplication" is-config="true" duration-ms="1575" started-at="2018-03-13T10:01:51Z" finished-at="2018-03-13T10:01:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testInvalidLogin status=SUCCESS method=InvalidLogin.testInvalidLogin()[pri:2, instance:script.InvalidLogin@1622fdf] output={null}]]]>
+                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=ValidLogin.testValidLogin()[pri:1, instance:script.ValidLogin@1622fdf] output=HomePage is Displayed]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[testInvalidLogin is PASSED]]>
+              <![CDATA[testValidLogin is PASSED]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-      </class> <!-- script.InvalidLogin -->
+      </class> <!-- script.ValidLogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
