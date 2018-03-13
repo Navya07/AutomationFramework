@@ -2,40 +2,46 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[testInvalidLogin is PASSED]]>
+      <![CDATA[HomePage is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[testCheckProductVersion is PASSED]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="225595" started-at="2018-03-13T10:30:15Z" finished-at="2018-03-13T10:34:00Z">
+  <suite name="Failed suite [Failed suite [Failed suite [Default suite]]]" duration-ms="32514" started-at="2018-03-13T11:09:26Z" finished-at="2018-03-13T11:09:59Z">
     <groups>
       <group name="login">
-        <method signature="InvalidLogin.testInvalidLogin()[pri:2, instance:script.InvalidLogin@1622fdf]" name="testInvalidLogin" class="script.InvalidLogin"/>
+        <method signature="CheckProductVersion.testCheckProductVersion()[pri:3, instance:script.CheckProductVersion@194d431]" name="testCheckProductVersion" class="script.CheckProductVersion"/>
       </group> <!-- login -->
     </groups>
-    <test name="Default test" duration-ms="225595" started-at="2018-03-13T10:30:15Z" finished-at="2018-03-13T10:34:00Z">
-      <class name="script.InvalidLogin">
-        <test-method status="PASS" signature="openApplication()[pri:0, instance:script.InvalidLogin@1622fdf]" name="openApplication" is-config="true" duration-ms="83457" started-at="2018-03-13T10:30:15Z" finished-at="2018-03-13T10:31:38Z">
+    <test name="Default test(failed)(failed)(failed)" duration-ms="32514" started-at="2018-03-13T11:09:26Z" finished-at="2018-03-13T11:09:59Z">
+      <class name="script.CheckProductVersion">
+        <test-method status="PASS" signature="openApplication()[pri:0, instance:script.CheckProductVersion@194d431]" name="openApplication" is-config="true" duration-ms="22107" started-at="2018-03-13T11:09:26Z" finished-at="2018-03-13T11:09:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="testInvalidLogin()[pri:2, instance:script.InvalidLogin@1622fdf]" name="testInvalidLogin" duration-ms="138445" started-at="2018-03-13T10:31:38Z" finished-at="2018-03-13T10:33:57Z">
+        <test-method status="PASS" signature="testCheckProductVersion()[pri:3, instance:script.CheckProductVersion@194d431]" name="testCheckProductVersion" duration-ms="9215" started-at="2018-03-13T11:09:49Z" finished-at="2018-03-13T11:09:58Z">
           <reporter-output>
+            <line>
+              <![CDATA[HomePage is Displayed]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- testInvalidLogin -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.InvalidLogin@1622fdf]" name="closeApplication" is-config="true" duration-ms="3251" started-at="2018-03-13T10:33:57Z" finished-at="2018-03-13T10:34:00Z">
+        </test-method> <!-- testCheckProductVersion -->
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.CheckProductVersion@194d431]" name="closeApplication" is-config="true" duration-ms="1062" started-at="2018-03-13T11:09:58Z" finished-at="2018-03-13T11:09:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testInvalidLogin status=SUCCESS method=InvalidLogin.testInvalidLogin()[pri:2, instance:script.InvalidLogin@1622fdf] output={null}]]]>
+                <![CDATA[[TestResult name=testCheckProductVersion status=SUCCESS method=CheckProductVersion.testCheckProductVersion()[pri:3, instance:script.CheckProductVersion@194d431] output=HomePage is Displayed]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[testInvalidLogin is PASSED]]>
+              <![CDATA[testCheckProductVersion is PASSED]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-      </class> <!-- script.InvalidLogin -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- script.CheckProductVersion -->
+    </test> <!-- Default test(failed)(failed)(failed) -->
+  </suite> <!-- Failed suite [Failed suite [Failed suite [Default suite]]] -->
 </testng-results>
