@@ -20,112 +20,218 @@
       <![CDATA[null is FAILED]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="1099" started-at="2018-03-20T09:35:19Z" finished-at="2018-03-20T09:35:20Z">
+  <suite name="Suite" duration-ms="128647" started-at="2018-03-20T09:48:45Z" finished-at="2018-03-20T09:50:54Z">
     <groups>
       <group name="smoke">
-        <method signature="ValidLogin.testValidLogin()[pri:1, instance:script.ValidLogin@4bee09]" name="testValidLogin" class="script.ValidLogin"/>
-        <method signature="ValidLogin.testValidLogin()[pri:1, instance:script.ValidLogin@1805618]" name="testValidLogin" class="script.ValidLogin"/>
+        <method signature="ValidLogin.testValidLogin()[pri:1, instance:script.ValidLogin@ebc39e]" name="testValidLogin" class="script.ValidLogin"/>
+        <method signature="ValidLogin.testValidLogin()[pri:1, instance:script.ValidLogin@cb644e]" name="testValidLogin" class="script.ValidLogin"/>
       </group> <!-- smoke -->
       <group name="login">
-        <method signature="CheckProductVersion.testCheckProductVersion()[pri:3, instance:script.CheckProductVersion@1fa3a9d]" name="testCheckProductVersion" class="script.CheckProductVersion"/>
-        <method signature="InvalidLogin.testInvalidLogin()[pri:2, instance:script.InvalidLogin@ebc39e]" name="testInvalidLogin" class="script.InvalidLogin"/>
-        <method signature="ValidLogin.testValidLogin()[pri:1, instance:script.ValidLogin@4bee09]" name="testValidLogin" class="script.ValidLogin"/>
-        <method signature="CheckProductVersion.testCheckProductVersion()[pri:3, instance:script.CheckProductVersion@b9f472]" name="testCheckProductVersion" class="script.CheckProductVersion"/>
-        <method signature="InvalidLogin.testInvalidLogin()[pri:2, instance:script.InvalidLogin@cb644e]" name="testInvalidLogin" class="script.InvalidLogin"/>
-        <method signature="ValidLogin.testValidLogin()[pri:1, instance:script.ValidLogin@1805618]" name="testValidLogin" class="script.ValidLogin"/>
+        <method signature="CheckProductVersion.testCheckProductVersion()[pri:3, instance:script.CheckProductVersion@6ba0ac]" name="testCheckProductVersion" class="script.CheckProductVersion"/>
+        <method signature="InvalidLogin.testInvalidLogin()[pri:2, instance:script.InvalidLogin@1fa3a9d]" name="testInvalidLogin" class="script.InvalidLogin"/>
+        <method signature="ValidLogin.testValidLogin()[pri:1, instance:script.ValidLogin@ebc39e]" name="testValidLogin" class="script.ValidLogin"/>
+        <method signature="CheckProductVersion.testCheckProductVersion()[pri:3, instance:script.CheckProductVersion@1567f1]" name="testCheckProductVersion" class="script.CheckProductVersion"/>
+        <method signature="InvalidLogin.testInvalidLogin()[pri:2, instance:script.InvalidLogin@b9f472]" name="testInvalidLogin" class="script.InvalidLogin"/>
+        <method signature="ValidLogin.testValidLogin()[pri:1, instance:script.ValidLogin@cb644e]" name="testValidLogin" class="script.ValidLogin"/>
       </group> <!-- login -->
     </groups>
-    <test name="Win7MF" duration-ms="428" started-at="2018-03-20T09:35:19Z" finished-at="2018-03-20T09:35:20Z">
+    <test name="Win7MF" duration-ms="65331" started-at="2018-03-20T09:48:45Z" finished-at="2018-03-20T09:49:50Z">
       <class name="script.CheckProductVersion">
-        <test-method status="FAIL" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:script.CheckProductVersion@1fa3a9d]" name="openApplication" is-config="true" duration-ms="0" started-at="2018-03-20T09:35:20Z" finished-at="2018-03-20T09:35:20Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method openApplication but has not been marked @Optional or defined
-in E:\navya\AutomationFrameWork\Framework\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method openApplication but has not been marked @Optional or defined
-in E:\navya\AutomationFrameWork\Framework\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:290)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
-at org.testng.internal.Parameters.createParameters(Parameters.java:620)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method status="SKIP" signature="testCheckProductVersion()[pri:3, instance:script.CheckProductVersion@1fa3a9d]" name="testCheckProductVersion" duration-ms="0" started-at="2018-03-20T09:35:20Z" finished-at="2018-03-20T09:35:20Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method openApplication but has not been marked @Optional or defined
-in E:\navya\AutomationFrameWork\Framework\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method openApplication but has not been marked @Optional or defined
-in E:\navya\AutomationFrameWork\Framework\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:290)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
-at org.testng.internal.Parameters.createParameters(Parameters.java:620)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCheckProductVersion -->
-        <test-method status="FAIL" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.CheckProductVersion@1fa3a9d]" name="closeApplication" is-config="true" duration-ms="2" started-at="2018-03-20T09:35:20Z" finished-at="2018-03-20T09:35:20Z">
+        <test-method status="FAIL" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:script.CheckProductVersion@6ba0ac]" name="openApplication" is-config="true" duration-ms="21029" started-at="2018-03-20T09:49:29Z" finished-at="2018-03-20T09:49:50Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CheckProductVersion.testCheckProductVersion()[pri:3, instance:script.CheckProductVersion@1fa3a9d] output={null}]]]>
+                <![CDATA[192.168.1.3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'NAVYA-PC', ip: '192.168.43.220', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'NAVYA-PC', ip: '192.168.43.220', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:155)
+at generic.BaseTest.openApplication(BaseTest.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.ConnectException: Failed to connect to /192.168.1.3:4444
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:101)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+... 32 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+at java.net.PlainSocketImpl.connect(Unknown Source)
+at java.net.SocksSocketImpl.connect(Unknown Source)
+at java.net.Socket.connect(Unknown Source)
+at okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
+... 54 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method status="SKIP" signature="testCheckProductVersion()[pri:3, instance:script.CheckProductVersion@6ba0ac]" name="testCheckProductVersion" duration-ms="0" started-at="2018-03-20T09:49:50Z" finished-at="2018-03-20T09:49:50Z">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'NAVYA-PC', ip: '192.168.43.220', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'NAVYA-PC', ip: '192.168.43.220', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:155)
+at generic.BaseTest.openApplication(BaseTest.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.ConnectException: Failed to connect to /192.168.1.3:4444
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:101)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+... 32 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+at java.net.PlainSocketImpl.connect(Unknown Source)
+at java.net.SocksSocketImpl.connect(Unknown Source)
+at java.net.Socket.connect(Unknown Source)
+at okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
+... 54 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckProductVersion -->
+        <test-method status="FAIL" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.CheckProductVersion@6ba0ac]" name="closeApplication" is-config="true" duration-ms="18" started-at="2018-03-20T09:49:50Z" finished-at="2018-03-20T09:49:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=CheckProductVersion.testCheckProductVersion()[pri:3, instance:script.CheckProductVersion@6ba0ac] output={null}]]]>
               </value>
             </param>
           </params>
@@ -172,95 +278,201 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- closeApplication -->
       </class> <!-- script.CheckProductVersion -->
       <class name="script.InvalidLogin">
-        <test-method status="FAIL" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:script.InvalidLogin@ebc39e]" name="openApplication" is-config="true" duration-ms="0" started-at="2018-03-20T09:35:19Z" finished-at="2018-03-20T09:35:19Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method openApplication but has not been marked @Optional or defined
-in E:\navya\AutomationFrameWork\Framework\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method openApplication but has not been marked @Optional or defined
-in E:\navya\AutomationFrameWork\Framework\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:290)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
-at org.testng.internal.Parameters.createParameters(Parameters.java:620)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method status="SKIP" signature="testInvalidLogin()[pri:2, instance:script.InvalidLogin@ebc39e]" name="testInvalidLogin" duration-ms="0" started-at="2018-03-20T09:35:19Z" finished-at="2018-03-20T09:35:19Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method openApplication but has not been marked @Optional or defined
-in E:\navya\AutomationFrameWork\Framework\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method openApplication but has not been marked @Optional or defined
-in E:\navya\AutomationFrameWork\Framework\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:290)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
-at org.testng.internal.Parameters.createParameters(Parameters.java:620)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testInvalidLogin -->
-        <test-method status="FAIL" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.InvalidLogin@ebc39e]" name="closeApplication" is-config="true" duration-ms="1" started-at="2018-03-20T09:35:20Z" finished-at="2018-03-20T09:35:20Z">
+        <test-method status="FAIL" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:script.InvalidLogin@1fa3a9d]" name="openApplication" is-config="true" duration-ms="21022" started-at="2018-03-20T09:49:08Z" finished-at="2018-03-20T09:49:29Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=InvalidLogin.testInvalidLogin()[pri:2, instance:script.InvalidLogin@ebc39e] output={null}]]]>
+                <![CDATA[192.168.1.3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'NAVYA-PC', ip: '192.168.43.220', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'NAVYA-PC', ip: '192.168.43.220', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:155)
+at generic.BaseTest.openApplication(BaseTest.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.ConnectException: Failed to connect to /192.168.1.3:4444
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:101)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+... 32 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+at java.net.PlainSocketImpl.connect(Unknown Source)
+at java.net.SocksSocketImpl.connect(Unknown Source)
+at java.net.Socket.connect(Unknown Source)
+at okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
+... 54 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method status="SKIP" signature="testInvalidLogin()[pri:2, instance:script.InvalidLogin@1fa3a9d]" name="testInvalidLogin" duration-ms="0" started-at="2018-03-20T09:49:29Z" finished-at="2018-03-20T09:49:29Z">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'NAVYA-PC', ip: '192.168.43.220', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'NAVYA-PC', ip: '192.168.43.220', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:155)
+at generic.BaseTest.openApplication(BaseTest.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.ConnectException: Failed to connect to /192.168.1.3:4444
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:101)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+... 32 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+at java.net.PlainSocketImpl.connect(Unknown Source)
+at java.net.SocksSocketImpl.connect(Unknown Source)
+at java.net.Socket.connect(Unknown Source)
+at okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
+... 54 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method status="FAIL" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.InvalidLogin@1fa3a9d]" name="closeApplication" is-config="true" duration-ms="1" started-at="2018-03-20T09:49:29Z" finished-at="2018-03-20T09:49:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=InvalidLogin.testInvalidLogin()[pri:2, instance:script.InvalidLogin@1fa3a9d] output={null}]]]>
               </value>
             </param>
           </params>
@@ -307,95 +519,201 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- closeApplication -->
       </class> <!-- script.InvalidLogin -->
       <class name="script.ValidLogin">
-        <test-method status="FAIL" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:script.ValidLogin@4bee09]" name="openApplication" is-config="true" duration-ms="0" started-at="2018-03-20T09:35:19Z" finished-at="2018-03-20T09:35:19Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method openApplication but has not been marked @Optional or defined
-in E:\navya\AutomationFrameWork\Framework\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method openApplication but has not been marked @Optional or defined
-in E:\navya\AutomationFrameWork\Framework\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:290)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
-at org.testng.internal.Parameters.createParameters(Parameters.java:620)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method status="SKIP" signature="testValidLogin()[pri:1, instance:script.ValidLogin@4bee09]" name="testValidLogin" duration-ms="0" started-at="2018-03-20T09:35:19Z" finished-at="2018-03-20T09:35:19Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method openApplication but has not been marked @Optional or defined
-in E:\navya\AutomationFrameWork\Framework\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method openApplication but has not been marked @Optional or defined
-in E:\navya\AutomationFrameWork\Framework\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:290)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
-at org.testng.internal.Parameters.createParameters(Parameters.java:620)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testValidLogin -->
-        <test-method status="FAIL" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.ValidLogin@4bee09]" name="closeApplication" is-config="true" duration-ms="155" started-at="2018-03-20T09:35:19Z" finished-at="2018-03-20T09:35:19Z">
+        <test-method status="FAIL" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:script.ValidLogin@ebc39e]" name="openApplication" is-config="true" duration-ms="23071" started-at="2018-03-20T09:48:45Z" finished-at="2018-03-20T09:49:08Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=ValidLogin.testValidLogin()[pri:1, instance:script.ValidLogin@4bee09] output={null}]]]>
+                <![CDATA[192.168.1.3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'NAVYA-PC', ip: '192.168.43.220', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'NAVYA-PC', ip: '192.168.43.220', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:155)
+at generic.BaseTest.openApplication(BaseTest.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.ConnectException: Failed to connect to /192.168.1.3:4444
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:101)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+... 32 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+at java.net.PlainSocketImpl.connect(Unknown Source)
+at java.net.SocksSocketImpl.connect(Unknown Source)
+at java.net.Socket.connect(Unknown Source)
+at okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
+... 54 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method status="SKIP" signature="testValidLogin()[pri:1, instance:script.ValidLogin@ebc39e]" name="testValidLogin" duration-ms="0" started-at="2018-03-20T09:49:08Z" finished-at="2018-03-20T09:49:08Z">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'NAVYA-PC', ip: '192.168.43.220', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'NAVYA-PC', ip: '192.168.43.220', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:155)
+at generic.BaseTest.openApplication(BaseTest.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.ConnectException: Failed to connect to /192.168.1.3:4444
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:101)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+... 32 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+at java.net.PlainSocketImpl.connect(Unknown Source)
+at java.net.SocksSocketImpl.connect(Unknown Source)
+at java.net.Socket.connect(Unknown Source)
+at okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
+... 54 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method status="FAIL" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.ValidLogin@ebc39e]" name="closeApplication" is-config="true" duration-ms="30" started-at="2018-03-20T09:49:08Z" finished-at="2018-03-20T09:49:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=ValidLogin.testValidLogin()[pri:1, instance:script.ValidLogin@ebc39e] output={null}]]]>
               </value>
             </param>
           </params>
@@ -442,97 +760,203 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- closeApplication -->
       </class> <!-- script.ValidLogin -->
     </test> <!-- Win7MF -->
-    <test name="Win7GC" duration-ms="277" started-at="2018-03-20T09:35:20Z" finished-at="2018-03-20T09:35:20Z">
+    <test name="Win7GC" duration-ms="63173" started-at="2018-03-20T09:49:50Z" finished-at="2018-03-20T09:50:54Z">
       <class name="script.CheckProductVersion">
-        <test-method status="FAIL" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:script.CheckProductVersion@b9f472]" name="openApplication" is-config="true" duration-ms="0" started-at="2018-03-20T09:35:20Z" finished-at="2018-03-20T09:35:20Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method openApplication but has not been marked @Optional or defined
-in E:\navya\AutomationFrameWork\Framework\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method openApplication but has not been marked @Optional or defined
-in E:\navya\AutomationFrameWork\Framework\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:290)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
-at org.testng.internal.Parameters.createParameters(Parameters.java:620)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method status="SKIP" signature="testCheckProductVersion()[pri:3, instance:script.CheckProductVersion@b9f472]" name="testCheckProductVersion" duration-ms="0" started-at="2018-03-20T09:35:20Z" finished-at="2018-03-20T09:35:20Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method openApplication but has not been marked @Optional or defined
-in E:\navya\AutomationFrameWork\Framework\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method openApplication but has not been marked @Optional or defined
-in E:\navya\AutomationFrameWork\Framework\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:290)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
-at org.testng.internal.Parameters.createParameters(Parameters.java:620)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCheckProductVersion -->
-        <test-method status="FAIL" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.CheckProductVersion@b9f472]" name="closeApplication" is-config="true" duration-ms="0" started-at="2018-03-20T09:35:20Z" finished-at="2018-03-20T09:35:20Z">
+        <test-method status="FAIL" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:script.CheckProductVersion@1567f1]" name="openApplication" is-config="true" duration-ms="21018" started-at="2018-03-20T09:50:33Z" finished-at="2018-03-20T09:50:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=CheckProductVersion.testCheckProductVersion()[pri:3, instance:script.CheckProductVersion@b9f472] output={null}]]]>
+                <![CDATA[192.168.1.3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'NAVYA-PC', ip: '192.168.43.220', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'NAVYA-PC', ip: '192.168.43.220', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:155)
+at generic.BaseTest.openApplication(BaseTest.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.ConnectException: Failed to connect to /192.168.1.3:4444
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:101)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+... 32 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+at java.net.PlainSocketImpl.connect(Unknown Source)
+at java.net.SocksSocketImpl.connect(Unknown Source)
+at java.net.Socket.connect(Unknown Source)
+at okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
+... 54 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method status="SKIP" signature="testCheckProductVersion()[pri:3, instance:script.CheckProductVersion@1567f1]" name="testCheckProductVersion" duration-ms="0" started-at="2018-03-20T09:50:54Z" finished-at="2018-03-20T09:50:54Z">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'NAVYA-PC', ip: '192.168.43.220', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'NAVYA-PC', ip: '192.168.43.220', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:155)
+at generic.BaseTest.openApplication(BaseTest.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.ConnectException: Failed to connect to /192.168.1.3:4444
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:101)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+... 32 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+at java.net.PlainSocketImpl.connect(Unknown Source)
+at java.net.SocksSocketImpl.connect(Unknown Source)
+at java.net.Socket.connect(Unknown Source)
+at okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
+... 54 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckProductVersion -->
+        <test-method status="FAIL" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.CheckProductVersion@1567f1]" name="closeApplication" is-config="true" duration-ms="1" started-at="2018-03-20T09:50:54Z" finished-at="2018-03-20T09:50:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=CheckProductVersion.testCheckProductVersion()[pri:3, instance:script.CheckProductVersion@1567f1] output={null}]]]>
               </value>
             </param>
           </params>
@@ -579,95 +1003,201 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- closeApplication -->
       </class> <!-- script.CheckProductVersion -->
       <class name="script.InvalidLogin">
-        <test-method status="FAIL" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:script.InvalidLogin@cb644e]" name="openApplication" is-config="true" duration-ms="0" started-at="2018-03-20T09:35:20Z" finished-at="2018-03-20T09:35:20Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method openApplication but has not been marked @Optional or defined
-in E:\navya\AutomationFrameWork\Framework\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method openApplication but has not been marked @Optional or defined
-in E:\navya\AutomationFrameWork\Framework\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:290)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
-at org.testng.internal.Parameters.createParameters(Parameters.java:620)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method status="SKIP" signature="testInvalidLogin()[pri:2, instance:script.InvalidLogin@cb644e]" name="testInvalidLogin" duration-ms="0" started-at="2018-03-20T09:35:20Z" finished-at="2018-03-20T09:35:20Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method openApplication but has not been marked @Optional or defined
-in E:\navya\AutomationFrameWork\Framework\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method openApplication but has not been marked @Optional or defined
-in E:\navya\AutomationFrameWork\Framework\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:290)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
-at org.testng.internal.Parameters.createParameters(Parameters.java:620)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testInvalidLogin -->
-        <test-method status="FAIL" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.InvalidLogin@cb644e]" name="closeApplication" is-config="true" duration-ms="0" started-at="2018-03-20T09:35:20Z" finished-at="2018-03-20T09:35:20Z">
+        <test-method status="FAIL" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:script.InvalidLogin@b9f472]" name="openApplication" is-config="true" duration-ms="21028" started-at="2018-03-20T09:50:11Z" finished-at="2018-03-20T09:50:32Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=InvalidLogin.testInvalidLogin()[pri:2, instance:script.InvalidLogin@cb644e] output={null}]]]>
+                <![CDATA[192.168.1.3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'NAVYA-PC', ip: '192.168.43.220', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'NAVYA-PC', ip: '192.168.43.220', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:155)
+at generic.BaseTest.openApplication(BaseTest.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.ConnectException: Failed to connect to /192.168.1.3:4444
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:101)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+... 32 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+at java.net.PlainSocketImpl.connect(Unknown Source)
+at java.net.SocksSocketImpl.connect(Unknown Source)
+at java.net.Socket.connect(Unknown Source)
+at okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
+... 54 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method status="SKIP" signature="testInvalidLogin()[pri:2, instance:script.InvalidLogin@b9f472]" name="testInvalidLogin" duration-ms="0" started-at="2018-03-20T09:50:32Z" finished-at="2018-03-20T09:50:32Z">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'NAVYA-PC', ip: '192.168.43.220', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'NAVYA-PC', ip: '192.168.43.220', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:155)
+at generic.BaseTest.openApplication(BaseTest.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.ConnectException: Failed to connect to /192.168.1.3:4444
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:101)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+... 32 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+at java.net.PlainSocketImpl.connect(Unknown Source)
+at java.net.SocksSocketImpl.connect(Unknown Source)
+at java.net.Socket.connect(Unknown Source)
+at okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
+... 54 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method status="FAIL" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.InvalidLogin@b9f472]" name="closeApplication" is-config="true" duration-ms="0" started-at="2018-03-20T09:50:32Z" finished-at="2018-03-20T09:50:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=InvalidLogin.testInvalidLogin()[pri:2, instance:script.InvalidLogin@b9f472] output={null}]]]>
               </value>
             </param>
           </params>
@@ -714,95 +1244,201 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- closeApplication -->
       </class> <!-- script.InvalidLogin -->
       <class name="script.ValidLogin">
-        <test-method status="FAIL" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:script.ValidLogin@1805618]" name="openApplication" is-config="true" duration-ms="0" started-at="2018-03-20T09:35:20Z" finished-at="2018-03-20T09:35:20Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method openApplication but has not been marked @Optional or defined
-in E:\navya\AutomationFrameWork\Framework\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method openApplication but has not been marked @Optional or defined
-in E:\navya\AutomationFrameWork\Framework\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:290)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
-at org.testng.internal.Parameters.createParameters(Parameters.java:620)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method status="SKIP" signature="testValidLogin()[pri:1, instance:script.ValidLogin@1805618]" name="testValidLogin" duration-ms="0" started-at="2018-03-20T09:35:20Z" finished-at="2018-03-20T09:35:20Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method openApplication but has not been marked @Optional or defined
-in E:\navya\AutomationFrameWork\Framework\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method openApplication but has not been marked @Optional or defined
-in E:\navya\AutomationFrameWork\Framework\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:290)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
-at org.testng.internal.Parameters.createParameters(Parameters.java:620)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testValidLogin -->
-        <test-method status="FAIL" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.ValidLogin@1805618]" name="closeApplication" is-config="true" duration-ms="1" started-at="2018-03-20T09:35:20Z" finished-at="2018-03-20T09:35:20Z">
+        <test-method status="FAIL" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:script.ValidLogin@cb644e]" name="openApplication" is-config="true" duration-ms="21019" started-at="2018-03-20T09:49:50Z" finished-at="2018-03-20T09:50:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=ValidLogin.testValidLogin()[pri:1, instance:script.ValidLogin@1805618] output={null}]]]>
+                <![CDATA[192.168.1.3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'NAVYA-PC', ip: '192.168.43.220', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'NAVYA-PC', ip: '192.168.43.220', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:155)
+at generic.BaseTest.openApplication(BaseTest.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.ConnectException: Failed to connect to /192.168.1.3:4444
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:101)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+... 32 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+at java.net.PlainSocketImpl.connect(Unknown Source)
+at java.net.SocksSocketImpl.connect(Unknown Source)
+at java.net.Socket.connect(Unknown Source)
+at okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
+... 54 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method status="SKIP" signature="testValidLogin()[pri:1, instance:script.ValidLogin@cb644e]" name="testValidLogin" duration-ms="0" started-at="2018-03-20T09:50:11Z" finished-at="2018-03-20T09:50:11Z">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'NAVYA-PC', ip: '192.168.43.220', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'NAVYA-PC', ip: '192.168.43.220', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:155)
+at generic.BaseTest.openApplication(BaseTest.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.ConnectException: Failed to connect to /192.168.1.3:4444
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:101)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+... 32 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+at java.net.PlainSocketImpl.connect(Unknown Source)
+at java.net.SocksSocketImpl.connect(Unknown Source)
+at java.net.Socket.connect(Unknown Source)
+at okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
+... 54 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method status="FAIL" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.ValidLogin@cb644e]" name="closeApplication" is-config="true" duration-ms="1" started-at="2018-03-20T09:50:11Z" finished-at="2018-03-20T09:50:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=ValidLogin.testValidLogin()[pri:1, instance:script.ValidLogin@cb644e] output={null}]]]>
               </value>
             </param>
           </params>

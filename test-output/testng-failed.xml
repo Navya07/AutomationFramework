@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Win7MF(failed)">
     <parameter name="ip" value="192.168.1.3"/>
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="script.CheckProductVersion">
-        <methods>
-          <include name="testCheckProductVersion"/>
-          <include name="closeApplication"/>
-          <include name="openApplication"/>
-        </methods>
-      </class> <!-- script.CheckProductVersion -->
       <class name="script.InvalidLogin">
         <methods>
           <include name="testInvalidLogin"/>
@@ -25,18 +19,19 @@
           <include name="openApplication"/>
         </methods>
       </class> <!-- script.ValidLogin -->
+      <class name="script.CheckProductVersion">
+        <methods>
+          <include name="testCheckProductVersion"/>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- script.CheckProductVersion -->
     </classes>
   </test> <!-- Win7MF(failed) -->
   <test thread-count="5" name="Win7GC(failed)">
     <parameter name="ip" value="192.168.1.3"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="script.CheckProductVersion">
-        <methods>
-          <include name="testCheckProductVersion"/>
-          <include name="closeApplication"/>
-          <include name="openApplication"/>
-        </methods>
-      </class> <!-- script.CheckProductVersion -->
       <class name="script.InvalidLogin">
         <methods>
           <include name="testInvalidLogin"/>
@@ -51,6 +46,13 @@
           <include name="openApplication"/>
         </methods>
       </class> <!-- script.ValidLogin -->
+      <class name="script.CheckProductVersion">
+        <methods>
+          <include name="testCheckProductVersion"/>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- script.CheckProductVersion -->
     </classes>
   </test> <!-- Win7GC(failed) -->
 </suite> <!-- Failed suite [Suite] -->
