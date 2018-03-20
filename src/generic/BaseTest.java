@@ -1,9 +1,13 @@
 package generic;
 
+
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
@@ -19,12 +23,15 @@ public abstract class BaseTest implements IAutoConst{
 	
 	@Parameters({"ip","browser"})
 	@BeforeMethod(alwaysRun=true)
-	public void openApplication() {
+	public void openApplication(String ip,String browserName) throws Exception {
 		String appURL=AutoUtil.getProperty(CONFIG_PATH,"URL");
 		String strITO = AutoUtil.getProperty(CONFIG_PATH,"ITO");
 		long ITO = Long.parseLong(strITO);
 		
-		driver=new ChromeDriver();
+		URL system=new URL("http://"+ip+":4444/wb/hub");
+		DesiredCapabilities browser=new DesiredCapabilities();
+		browser.setBrowserName(browserName);
+		driver=new RemoteWebDriver(system,browser);
 		driver.get(appURL);
 		driver.manage().timeouts().implicitlyWait(ITO,TimeUnit.SECONDS);
 	}
