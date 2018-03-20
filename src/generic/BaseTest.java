@@ -23,15 +23,15 @@ public abstract class BaseTest implements IAutoConst{
 	
 	@Parameters({"ip","browser"})
 	@BeforeMethod(alwaysRun=true)
-	public void openApplication(String ip,String browserName) throws Exception {
+	public void openApplication(String ip,String browser) throws Exception {
 		String appURL=AutoUtil.getProperty(CONFIG_PATH,"URL");
 		String strITO = AutoUtil.getProperty(CONFIG_PATH,"ITO");
 		long ITO = Long.parseLong(strITO);
 		
-		URL system=new URL("http://"+ip+":4444/wb/hub");
-		DesiredCapabilities browser=new DesiredCapabilities();
-		browser.setBrowserName(browserName);
-		driver=new RemoteWebDriver(system,browser);
+		URL whichSystem=new URL("http://"+ip+":4444/wb/hub");
+		DesiredCapabilities whichBrowser=new DesiredCapabilities();
+		whichBrowser.setBrowserName(browser);
+		driver=new RemoteWebDriver(whichSystem,whichBrowser);
 		driver.get(appURL);
 		driver.manage().timeouts().implicitlyWait(ITO,TimeUnit.SECONDS);
 	}
