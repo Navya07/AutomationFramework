@@ -2,14 +2,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="tests">
   <test name="Win7MF">
-   <parameter name="ip" value="192.168.1.3"/>
+   <parameter name="ip" value="192.168.43.220"/>
 <parameter name="browser" value="firefox"></parameter>
     <packages>
  <package name="script"></package>
  </packages>
   </test> <!-- Test -->
   <test name="Win7GC">
-   <parameter name="ip" value="192.168.1.3"/>
+   <parameter name="ip" value="192.168.43.220"/>
 <parameter name="browser" value="chrome"></parameter>
     <packages>
  <package name="script"></package>
