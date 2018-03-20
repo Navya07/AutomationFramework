@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="Suite" parallel="tests">
   <test name="Win7MF">
    <parameter name="ip" value="192.168.1.3"/>
 <parameter name="browser" value="firefox"></parameter>
