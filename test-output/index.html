@@ -153,11 +153,60 @@
                   <a name="testInvalidLogin">
                   </a> <!-- testInvalidLogin -->
                   <span class="method-name">testInvalidLogin</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Unable to parse remote response: &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/displayhelpservlet.css&quot; media=&quot;all&quot;/&gt;
+  &lt;link href=&quot;/assets/favicon.ico&quot; rel=&quot;icon&quot; type=&quot;image/x-icon&quot; /&gt;
+  &lt;script src=&quot;/assets/jquery-3.1.1.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;/assets/displayhelpservlet.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    var json = Object.freeze(&apos;{&quot;consoleLink&quot;:&quot;/wd/hub&quot;,&quot;type&quot;:&quot;Standalone&quot;,&quot;version&quot;:&quot;3.11.0&quot;,&quot;class&quot;:&quot;org.openqa.grid.web.servlet.DisplayHelpServlet$DisplayHelpServletConfig&quot;}&apos;);
+  &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div id=&quot;content&quot;&gt;
+  &lt;div id=&quot;help-heading&quot;&gt;
+    &lt;h1&gt;&lt;span id=&quot;logo&quot;&gt;&lt;/span&gt;&lt;/h1&gt;
+    &lt;h2&gt;Selenium &lt;span class=&quot;se-type&quot;&gt;&lt;/span&gt;&amp;nbsp;v.&lt;span class=&quot;se-version&quot;&gt;&lt;/span&gt;&lt;/h2&gt;
+  &lt;/div&gt;
+
+  &lt;div id=&quot;content-body&quot;&gt;
+    &lt;p&gt;
+      Whoops! The URL specified routes to this help page.
+    &lt;/p&gt;
+    &lt;p&gt;
+      For more information about Selenium &lt;span class=&quot;se-type&quot;&gt;&lt;/span&gt; please see the
+      &lt;a class=&quot;se-docs&quot;&gt;docs&lt;/a&gt; and/or visit the &lt;a class=&quot;se-wiki&quot;&gt;wiki&lt;/a&gt;.
+      &lt;span id=&quot;console-item&quot;&gt;
+        Or perhaps you are looking for the Selenium &lt;span class=&quot;se-type&quot;&gt;&lt;/span&gt; &lt;a class=&quot;se-console&quot;&gt;console&lt;/a&gt;.
+      &lt;/span&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      Happy Testing!
+    &lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div&gt;
+    &lt;footer id=&quot;help-footer&quot;&gt;
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these &lt;a href=&quot;https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS&quot;&gt;people&lt;/a&gt;, and our
+      &lt;a href=&quot;http://www.seleniumhq.org/sponsors/&quot;&gt;sponsors&lt;/a&gt;.
+   &lt;/footer&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
 Build info: version: &apos;3.10.0&apos;, revision: &apos;176b4a9&apos;, time: &apos;2018-03-02T19:03:16.397Z&apos;
-System info: host: &apos;NAVYA-PC&apos;, ip: &apos;192.168.43.220&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+System info: host: &apos;NAVYA-PC&apos;, ip: &apos;192.168.43.220&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_161&apos;
 Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:111)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
 	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:155)
@@ -166,43 +215,6 @@ Driver info: driver.version: RemoteWebDriver
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: java.net.ConnectException: Failed to connect to /192.168.43.220:4444
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:101)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	... 27 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
-	... 49 more
 ... Removed 19 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -212,11 +224,60 @@ Caused by: java.net.ConnectException: Connection refused: connect
                   <a name="testInvalidLogin">
                   </a> <!-- testInvalidLogin -->
                   <span class="method-name">testInvalidLogin</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Unable to parse remote response: &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/displayhelpservlet.css&quot; media=&quot;all&quot;/&gt;
+  &lt;link href=&quot;/assets/favicon.ico&quot; rel=&quot;icon&quot; type=&quot;image/x-icon&quot; /&gt;
+  &lt;script src=&quot;/assets/jquery-3.1.1.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;/assets/displayhelpservlet.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    var json = Object.freeze(&apos;{&quot;consoleLink&quot;:&quot;/wd/hub&quot;,&quot;type&quot;:&quot;Standalone&quot;,&quot;version&quot;:&quot;3.11.0&quot;,&quot;class&quot;:&quot;org.openqa.grid.web.servlet.DisplayHelpServlet$DisplayHelpServletConfig&quot;}&apos;);
+  &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div id=&quot;content&quot;&gt;
+  &lt;div id=&quot;help-heading&quot;&gt;
+    &lt;h1&gt;&lt;span id=&quot;logo&quot;&gt;&lt;/span&gt;&lt;/h1&gt;
+    &lt;h2&gt;Selenium &lt;span class=&quot;se-type&quot;&gt;&lt;/span&gt;&amp;nbsp;v.&lt;span class=&quot;se-version&quot;&gt;&lt;/span&gt;&lt;/h2&gt;
+  &lt;/div&gt;
+
+  &lt;div id=&quot;content-body&quot;&gt;
+    &lt;p&gt;
+      Whoops! The URL specified routes to this help page.
+    &lt;/p&gt;
+    &lt;p&gt;
+      For more information about Selenium &lt;span class=&quot;se-type&quot;&gt;&lt;/span&gt; please see the
+      &lt;a class=&quot;se-docs&quot;&gt;docs&lt;/a&gt; and/or visit the &lt;a class=&quot;se-wiki&quot;&gt;wiki&lt;/a&gt;.
+      &lt;span id=&quot;console-item&quot;&gt;
+        Or perhaps you are looking for the Selenium &lt;span class=&quot;se-type&quot;&gt;&lt;/span&gt; &lt;a class=&quot;se-console&quot;&gt;console&lt;/a&gt;.
+      &lt;/span&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      Happy Testing!
+    &lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div&gt;
+    &lt;footer id=&quot;help-footer&quot;&gt;
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these &lt;a href=&quot;https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS&quot;&gt;people&lt;/a&gt;, and our
+      &lt;a href=&quot;http://www.seleniumhq.org/sponsors/&quot;&gt;sponsors&lt;/a&gt;.
+   &lt;/footer&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
 Build info: version: &apos;3.10.0&apos;, revision: &apos;176b4a9&apos;, time: &apos;2018-03-02T19:03:16.397Z&apos;
-System info: host: &apos;NAVYA-PC&apos;, ip: &apos;192.168.43.220&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+System info: host: &apos;NAVYA-PC&apos;, ip: &apos;192.168.43.220&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_161&apos;
 Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:111)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
 	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:155)
@@ -225,43 +286,6 @@ Driver info: driver.version: RemoteWebDriver
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: java.net.ConnectException: Failed to connect to /192.168.43.220:4444
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:101)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	... 27 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
-	... 49 more
 ... Removed 19 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -279,11 +303,60 @@ Caused by: java.net.ConnectException: Connection refused: connect
                   <a name="testValidLogin">
                   </a> <!-- testValidLogin -->
                   <span class="method-name">testValidLogin</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Unable to parse remote response: &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/displayhelpservlet.css&quot; media=&quot;all&quot;/&gt;
+  &lt;link href=&quot;/assets/favicon.ico&quot; rel=&quot;icon&quot; type=&quot;image/x-icon&quot; /&gt;
+  &lt;script src=&quot;/assets/jquery-3.1.1.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;/assets/displayhelpservlet.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    var json = Object.freeze(&apos;{&quot;consoleLink&quot;:&quot;/wd/hub&quot;,&quot;type&quot;:&quot;Standalone&quot;,&quot;version&quot;:&quot;3.11.0&quot;,&quot;class&quot;:&quot;org.openqa.grid.web.servlet.DisplayHelpServlet$DisplayHelpServletConfig&quot;}&apos;);
+  &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div id=&quot;content&quot;&gt;
+  &lt;div id=&quot;help-heading&quot;&gt;
+    &lt;h1&gt;&lt;span id=&quot;logo&quot;&gt;&lt;/span&gt;&lt;/h1&gt;
+    &lt;h2&gt;Selenium &lt;span class=&quot;se-type&quot;&gt;&lt;/span&gt;&amp;nbsp;v.&lt;span class=&quot;se-version&quot;&gt;&lt;/span&gt;&lt;/h2&gt;
+  &lt;/div&gt;
+
+  &lt;div id=&quot;content-body&quot;&gt;
+    &lt;p&gt;
+      Whoops! The URL specified routes to this help page.
+    &lt;/p&gt;
+    &lt;p&gt;
+      For more information about Selenium &lt;span class=&quot;se-type&quot;&gt;&lt;/span&gt; please see the
+      &lt;a class=&quot;se-docs&quot;&gt;docs&lt;/a&gt; and/or visit the &lt;a class=&quot;se-wiki&quot;&gt;wiki&lt;/a&gt;.
+      &lt;span id=&quot;console-item&quot;&gt;
+        Or perhaps you are looking for the Selenium &lt;span class=&quot;se-type&quot;&gt;&lt;/span&gt; &lt;a class=&quot;se-console&quot;&gt;console&lt;/a&gt;.
+      &lt;/span&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      Happy Testing!
+    &lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div&gt;
+    &lt;footer id=&quot;help-footer&quot;&gt;
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these &lt;a href=&quot;https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS&quot;&gt;people&lt;/a&gt;, and our
+      &lt;a href=&quot;http://www.seleniumhq.org/sponsors/&quot;&gt;sponsors&lt;/a&gt;.
+   &lt;/footer&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
 Build info: version: &apos;3.10.0&apos;, revision: &apos;176b4a9&apos;, time: &apos;2018-03-02T19:03:16.397Z&apos;
-System info: host: &apos;NAVYA-PC&apos;, ip: &apos;192.168.43.220&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+System info: host: &apos;NAVYA-PC&apos;, ip: &apos;192.168.43.220&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_161&apos;
 Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:111)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
 	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:155)
@@ -292,43 +365,6 @@ Driver info: driver.version: RemoteWebDriver
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: java.net.ConnectException: Failed to connect to /192.168.43.220:4444
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:101)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	... 27 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
-	... 49 more
 ... Removed 19 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -338,11 +374,60 @@ Caused by: java.net.ConnectException: Connection refused: connect
                   <a name="testValidLogin">
                   </a> <!-- testValidLogin -->
                   <span class="method-name">testValidLogin</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Unable to parse remote response: &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/displayhelpservlet.css&quot; media=&quot;all&quot;/&gt;
+  &lt;link href=&quot;/assets/favicon.ico&quot; rel=&quot;icon&quot; type=&quot;image/x-icon&quot; /&gt;
+  &lt;script src=&quot;/assets/jquery-3.1.1.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;/assets/displayhelpservlet.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    var json = Object.freeze(&apos;{&quot;consoleLink&quot;:&quot;/wd/hub&quot;,&quot;type&quot;:&quot;Standalone&quot;,&quot;version&quot;:&quot;3.11.0&quot;,&quot;class&quot;:&quot;org.openqa.grid.web.servlet.DisplayHelpServlet$DisplayHelpServletConfig&quot;}&apos;);
+  &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div id=&quot;content&quot;&gt;
+  &lt;div id=&quot;help-heading&quot;&gt;
+    &lt;h1&gt;&lt;span id=&quot;logo&quot;&gt;&lt;/span&gt;&lt;/h1&gt;
+    &lt;h2&gt;Selenium &lt;span class=&quot;se-type&quot;&gt;&lt;/span&gt;&amp;nbsp;v.&lt;span class=&quot;se-version&quot;&gt;&lt;/span&gt;&lt;/h2&gt;
+  &lt;/div&gt;
+
+  &lt;div id=&quot;content-body&quot;&gt;
+    &lt;p&gt;
+      Whoops! The URL specified routes to this help page.
+    &lt;/p&gt;
+    &lt;p&gt;
+      For more information about Selenium &lt;span class=&quot;se-type&quot;&gt;&lt;/span&gt; please see the
+      &lt;a class=&quot;se-docs&quot;&gt;docs&lt;/a&gt; and/or visit the &lt;a class=&quot;se-wiki&quot;&gt;wiki&lt;/a&gt;.
+      &lt;span id=&quot;console-item&quot;&gt;
+        Or perhaps you are looking for the Selenium &lt;span class=&quot;se-type&quot;&gt;&lt;/span&gt; &lt;a class=&quot;se-console&quot;&gt;console&lt;/a&gt;.
+      &lt;/span&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      Happy Testing!
+    &lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div&gt;
+    &lt;footer id=&quot;help-footer&quot;&gt;
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these &lt;a href=&quot;https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS&quot;&gt;people&lt;/a&gt;, and our
+      &lt;a href=&quot;http://www.seleniumhq.org/sponsors/&quot;&gt;sponsors&lt;/a&gt;.
+   &lt;/footer&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
 Build info: version: &apos;3.10.0&apos;, revision: &apos;176b4a9&apos;, time: &apos;2018-03-02T19:03:16.397Z&apos;
-System info: host: &apos;NAVYA-PC&apos;, ip: &apos;192.168.43.220&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+System info: host: &apos;NAVYA-PC&apos;, ip: &apos;192.168.43.220&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_161&apos;
 Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:111)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
 	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:155)
@@ -351,43 +436,6 @@ Driver info: driver.version: RemoteWebDriver
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: java.net.ConnectException: Failed to connect to /192.168.43.220:4444
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:101)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	... 27 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
-	... 49 more
 ... Removed 19 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -405,11 +453,60 @@ Caused by: java.net.ConnectException: Connection refused: connect
                   <a name="testCheckProductVersion">
                   </a> <!-- testCheckProductVersion -->
                   <span class="method-name">testCheckProductVersion</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Unable to parse remote response: &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/displayhelpservlet.css&quot; media=&quot;all&quot;/&gt;
+  &lt;link href=&quot;/assets/favicon.ico&quot; rel=&quot;icon&quot; type=&quot;image/x-icon&quot; /&gt;
+  &lt;script src=&quot;/assets/jquery-3.1.1.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;/assets/displayhelpservlet.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    var json = Object.freeze(&apos;{&quot;consoleLink&quot;:&quot;/wd/hub&quot;,&quot;type&quot;:&quot;Standalone&quot;,&quot;version&quot;:&quot;3.11.0&quot;,&quot;class&quot;:&quot;org.openqa.grid.web.servlet.DisplayHelpServlet$DisplayHelpServletConfig&quot;}&apos;);
+  &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div id=&quot;content&quot;&gt;
+  &lt;div id=&quot;help-heading&quot;&gt;
+    &lt;h1&gt;&lt;span id=&quot;logo&quot;&gt;&lt;/span&gt;&lt;/h1&gt;
+    &lt;h2&gt;Selenium &lt;span class=&quot;se-type&quot;&gt;&lt;/span&gt;&amp;nbsp;v.&lt;span class=&quot;se-version&quot;&gt;&lt;/span&gt;&lt;/h2&gt;
+  &lt;/div&gt;
+
+  &lt;div id=&quot;content-body&quot;&gt;
+    &lt;p&gt;
+      Whoops! The URL specified routes to this help page.
+    &lt;/p&gt;
+    &lt;p&gt;
+      For more information about Selenium &lt;span class=&quot;se-type&quot;&gt;&lt;/span&gt; please see the
+      &lt;a class=&quot;se-docs&quot;&gt;docs&lt;/a&gt; and/or visit the &lt;a class=&quot;se-wiki&quot;&gt;wiki&lt;/a&gt;.
+      &lt;span id=&quot;console-item&quot;&gt;
+        Or perhaps you are looking for the Selenium &lt;span class=&quot;se-type&quot;&gt;&lt;/span&gt; &lt;a class=&quot;se-console&quot;&gt;console&lt;/a&gt;.
+      &lt;/span&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      Happy Testing!
+    &lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div&gt;
+    &lt;footer id=&quot;help-footer&quot;&gt;
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these &lt;a href=&quot;https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS&quot;&gt;people&lt;/a&gt;, and our
+      &lt;a href=&quot;http://www.seleniumhq.org/sponsors/&quot;&gt;sponsors&lt;/a&gt;.
+   &lt;/footer&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
 Build info: version: &apos;3.10.0&apos;, revision: &apos;176b4a9&apos;, time: &apos;2018-03-02T19:03:16.397Z&apos;
-System info: host: &apos;NAVYA-PC&apos;, ip: &apos;192.168.43.220&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+System info: host: &apos;NAVYA-PC&apos;, ip: &apos;192.168.43.220&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_161&apos;
 Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:111)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
 	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:155)
@@ -418,43 +515,6 @@ Driver info: driver.version: RemoteWebDriver
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: java.net.ConnectException: Failed to connect to /192.168.43.220:4444
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:101)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	... 27 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
-	... 49 more
 ... Removed 19 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -464,11 +524,60 @@ Caused by: java.net.ConnectException: Connection refused: connect
                   <a name="testCheckProductVersion">
                   </a> <!-- testCheckProductVersion -->
                   <span class="method-name">testCheckProductVersion</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Unable to parse remote response: &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/displayhelpservlet.css&quot; media=&quot;all&quot;/&gt;
+  &lt;link href=&quot;/assets/favicon.ico&quot; rel=&quot;icon&quot; type=&quot;image/x-icon&quot; /&gt;
+  &lt;script src=&quot;/assets/jquery-3.1.1.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;/assets/displayhelpservlet.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    var json = Object.freeze(&apos;{&quot;consoleLink&quot;:&quot;/wd/hub&quot;,&quot;type&quot;:&quot;Standalone&quot;,&quot;version&quot;:&quot;3.11.0&quot;,&quot;class&quot;:&quot;org.openqa.grid.web.servlet.DisplayHelpServlet$DisplayHelpServletConfig&quot;}&apos;);
+  &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div id=&quot;content&quot;&gt;
+  &lt;div id=&quot;help-heading&quot;&gt;
+    &lt;h1&gt;&lt;span id=&quot;logo&quot;&gt;&lt;/span&gt;&lt;/h1&gt;
+    &lt;h2&gt;Selenium &lt;span class=&quot;se-type&quot;&gt;&lt;/span&gt;&amp;nbsp;v.&lt;span class=&quot;se-version&quot;&gt;&lt;/span&gt;&lt;/h2&gt;
+  &lt;/div&gt;
+
+  &lt;div id=&quot;content-body&quot;&gt;
+    &lt;p&gt;
+      Whoops! The URL specified routes to this help page.
+    &lt;/p&gt;
+    &lt;p&gt;
+      For more information about Selenium &lt;span class=&quot;se-type&quot;&gt;&lt;/span&gt; please see the
+      &lt;a class=&quot;se-docs&quot;&gt;docs&lt;/a&gt; and/or visit the &lt;a class=&quot;se-wiki&quot;&gt;wiki&lt;/a&gt;.
+      &lt;span id=&quot;console-item&quot;&gt;
+        Or perhaps you are looking for the Selenium &lt;span class=&quot;se-type&quot;&gt;&lt;/span&gt; &lt;a class=&quot;se-console&quot;&gt;console&lt;/a&gt;.
+      &lt;/span&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      Happy Testing!
+    &lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div&gt;
+    &lt;footer id=&quot;help-footer&quot;&gt;
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these &lt;a href=&quot;https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS&quot;&gt;people&lt;/a&gt;, and our
+      &lt;a href=&quot;http://www.seleniumhq.org/sponsors/&quot;&gt;sponsors&lt;/a&gt;.
+   &lt;/footer&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
 Build info: version: &apos;3.10.0&apos;, revision: &apos;176b4a9&apos;, time: &apos;2018-03-02T19:03:16.397Z&apos;
-System info: host: &apos;NAVYA-PC&apos;, ip: &apos;192.168.43.220&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+System info: host: &apos;NAVYA-PC&apos;, ip: &apos;192.168.43.220&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_161&apos;
 Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:111)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
 	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:155)
@@ -477,43 +586,6 @@ Driver info: driver.version: RemoteWebDriver
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: java.net.ConnectException: Failed to connect to /192.168.43.220:4444
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:101)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	... 27 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
-	... 49 more
 ... Removed 19 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -624,24 +696,24 @@ data.setCell(0, 1, 'testInvalidLogin')
 data.setCell(0, 2, 'script.InvalidLogin')
 data.setCell(0, 3, 0);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testValidLogin')
-data.setCell(1, 2, 'script.ValidLogin')
+data.setCell(1, 1, 'testCheckProductVersion')
+data.setCell(1, 2, 'script.CheckProductVersion')
 data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testCheckProductVersion')
-data.setCell(2, 2, 'script.CheckProductVersion')
+data.setCell(2, 1, 'testValidLogin')
+data.setCell(2, 2, 'script.ValidLogin')
 data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testInvalidLogin')
-data.setCell(3, 2, 'script.InvalidLogin')
+data.setCell(3, 1, 'testValidLogin')
+data.setCell(3, 2, 'script.ValidLogin')
 data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testValidLogin')
-data.setCell(4, 2, 'script.ValidLogin')
+data.setCell(4, 1, 'testCheckProductVersion')
+data.setCell(4, 2, 'script.CheckProductVersion')
 data.setCell(4, 3, 0);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testCheckProductVersion')
-data.setCell(5, 2, 'script.CheckProductVersion')
+data.setCell(5, 1, 'testInvalidLogin')
+data.setCell(5, 2, 'script.InvalidLogin')
 data.setCell(5, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
@@ -710,26 +782,26 @@ return data;
               <div class="configuration-method before">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">openApplication(192.168.43.220, firefox)</span>
+                <span class="method-name">openApplication(192.168.43.220, chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">openApplication(192.168.43.220, chrome)</span>
-                <span class="method-start">21 ms</span>
+                <span class="method-name">openApplication(192.168.43.220, firefox)</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">closeApplication([TestResult name={null} status=CREATED method=ValidLogin.testValidLogin()[pri:1, instance:script.Val...)</span>
-                <span class="method-start">3904 ms</span>
+                <span class="method-start">15424 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">closeApplication([TestResult name={null} status=CREATED method=ValidLogin.testValidLogin()[pri:1, instance:script.Val...)</span>
-                <span class="method-start">3907 ms</span>
+                <span class="method-start">15451 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -738,19 +810,25 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">openApplication(192.168.43.220, firefox)</span>
-                <span class="method-start">3950 ms</span>
+                <span class="method-start">15606 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">openApplication(192.168.43.220, chrome)</span>
-                <span class="method-start">3955 ms</span>
+                <span class="method-start">15606 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">closeApplication([TestResult name={null} status=CREATED method=InvalidLogin.testInvalidLogin()[pri:2, instance:script...)</span>
-                <span class="method-start">4982 ms</span>
+                <span class="method-start">15826 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">closeApplication([TestResult name={null} status=CREATED method=InvalidLogin.testInvalidLogin()[pri:2, instance:script...)</span>
+                <span class="method-start">15836 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -759,37 +837,25 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">openApplication(192.168.43.220, firefox)</span>
-                <span class="method-start">4985 ms</span>
+                <span class="method-start">15846 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">script.InvalidLogin</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">closeApplication([TestResult name={null} status=CREATED method=InvalidLogin.testInvalidLogin()[pri:2, instance:script...)</span>
-                <span class="method-start">5012 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">script.CheckProductVersion</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">openApplication(192.168.43.220, chrome)</span>
-                <span class="method-start">5036 ms</span>
+                <span class="method-start">15859 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">closeApplication([TestResult name={null} status=CREATED method=CheckProductVersion.testCheckProductVersion()[pri:3, i...)</span>
-                <span class="method-start">6013 ms</span>
+                <span class="method-start">15925 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">closeApplication([TestResult name={null} status=CREATED method=CheckProductVersion.testCheckProductVersion()[pri:3, i...)</span>
-                <span class="method-start">6073 ms</span>
+                <span class="method-start">15948 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
