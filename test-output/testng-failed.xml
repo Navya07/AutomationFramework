@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <test thread-count="5" name="Win7GC(failed)" parallel="tests">
-    <parameter name="ip" value="192.168.43.220"/>
-    <parameter name="browser" value="chrome"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="script.InvalidLogin">
-        <methods>
-          <include name="testInvalidLogin"/>
-          <include name="closeApplication"/>
-          <include name="openApplication"/>
-        </methods>
-      </class> <!-- script.InvalidLogin -->
       <class name="script.ValidLogin">
         <methods>
           <include name="testValidLogin"/>
@@ -19,40 +10,6 @@
           <include name="openApplication"/>
         </methods>
       </class> <!-- script.ValidLogin -->
-      <class name="script.CheckProductVersion">
-        <methods>
-          <include name="testCheckProductVersion"/>
-          <include name="closeApplication"/>
-          <include name="openApplication"/>
-        </methods>
-      </class> <!-- script.CheckProductVersion -->
     </classes>
-  </test> <!-- Win7GC(failed) -->
-  <test thread-count="5" name="Win7MF(failed)" parallel="tests">
-    <parameter name="ip" value="192.168.43.220"/>
-    <parameter name="browser" value="firefox"/>
-    <classes>
-      <class name="script.InvalidLogin">
-        <methods>
-          <include name="testInvalidLogin"/>
-          <include name="closeApplication"/>
-          <include name="openApplication"/>
-        </methods>
-      </class> <!-- script.InvalidLogin -->
-      <class name="script.ValidLogin">
-        <methods>
-          <include name="testValidLogin"/>
-          <include name="closeApplication"/>
-          <include name="openApplication"/>
-        </methods>
-      </class> <!-- script.ValidLogin -->
-      <class name="script.CheckProductVersion">
-        <methods>
-          <include name="testCheckProductVersion"/>
-          <include name="closeApplication"/>
-          <include name="openApplication"/>
-        </methods>
-      </class> <!-- script.CheckProductVersion -->
-    </classes>
-  </test> <!-- Win7MF(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

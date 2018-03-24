@@ -1,16 +1,16 @@
 <suite name="Suite" parallel="tests">
-  <test name="Win7MF">
-   <parameter name="ip" value="192.168.43.220"/>
-<parameter name="browser" value="firefox"></parameter>
+  <test name="TestOnFirefox">
+  <parameter name="ip" value="localhost"/>
+  <parameter name="browser" value="firefox"/>
     <packages>
- <package name="script"></package>
- </packages>
-  </test> <!-- Test -->
-  <test name="Win7GC">
-   <parameter name="ip" value="192.168.43.220"/>
-<parameter name="browser" value="chrome"></parameter>
-    <packages>
- <package name="script"></package>
- </packages>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+	<package name="script"/>
+    </packages>
+  </test> 
+<!--    <test name="TestOnChrome"> -->
+<!--   <parameter name="ip" value="localhost"/> -->
+<!--   <parameter name="browser" value="chrome"/> -->
+<!--     <packages> -->
+<!-- 	<package name="script"/> -->
+<!--     </packages> -->
+<!--   </test>  -->
+</suite>

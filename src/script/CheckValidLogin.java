@@ -6,7 +6,7 @@ import generic.Excel;
 import page.EnterPage;
 import page.LoginPage;
 
-public class ValidLogin extends BaseTest{
+public class CheckValidLogin extends BaseTest{
 
 	@Test(priority=1,groups= {"login","smoke"})
 	public void testValidLogin() {
